@@ -5,10 +5,9 @@ set :application, 'skeleton'
 set :repo_url, 'git@github.com:dhilton7/skeleton.git'
 set :branch, :master
 set :deploy_to, '/home/deploy/skeleton'
-set :pty, true
 set :linked_files, %w{config/database.yml config/application.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
-set :keep_releases, 5
+set :keep_releases, 4
 set :rvm_type, :user
 set :rvm_ruby_version, '2.5.0'
 
